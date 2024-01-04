@@ -1,0 +1,19 @@
+Chapter 2 : Templates
+
+We are separting the app logic and view logic by creating a separate files and folders.
+We have created a template folder which includes all .html files.
+
+In routes.py we are calling render_template(). This function takes a template filename 
+and a variable list of template arguments, and returns the same template, but with all 
+the placeholders in it replaced with actual values.
+
+The render_template() function invokes the Jinja template engine that comes bundled
+with the Flask framework. Jinja substitutes {{ ... }} blocks with the corresponding 
+values, given by the arguments provided in the render_template() call.
+
+The Jinja templates support contorl statements, loops etc.
+
+Jinja also supports templates inheritence. As most of the .html files have some common
+parts present in the webpage. We can create a base.html which will define a base template
+and further we can then use this base.html to be called in the subclass of other
+.html files.
