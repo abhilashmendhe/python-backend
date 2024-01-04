@@ -1,0 +1,9 @@
+Chapter 3 : WTF Forms
+
+We will be using flask-WTF which is integrated  WTForms, that provides a flexible forms validation and rendering library for Python web development. 
+
+
+- We will add config to our app instance which is a secret key. Considering principle of separtion, We will create a separte file config.py and store all our config
+variables.
+- We will create forms.py in app folder. This file will contain my web-form classes.
+
